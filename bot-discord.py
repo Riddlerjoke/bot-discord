@@ -13,14 +13,15 @@ from dotenv import load_dotenv
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
 GUILD = os.getenv('DISCORD_GUILD')
+
+
 #le prefix de la command permet d'avoir un premier charactere en commun a toutes commandes du Bot, pour facilité l'interactivité !
 
 bot = commands.bot.Bot(command_prefix='!')
 client = discord.Client()
 
-
-
 #la fonction 'on_ready' permet d'avoir une preuve ecrite du fonctionnement du Bot !
+
 @bot.event
 async def on_ready():
     print(f'{bot.user.display_name} has connected to Discord!')
