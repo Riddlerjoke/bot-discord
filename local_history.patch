@@ -1,0 +1,17 @@
+Index: bot discord.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- bot discord.py	(date 1582827524946)
++++ bot discord.py	(date 1582827524946)
+@@ -1,8 +1,7 @@
+ import os
+ import discord
+ import random
+-from click import utils
+-from bot_discord.Quotes import quotes
++from bo
+ from discord.ext import commands
+ from dotenv import load_dotenv
+ 
