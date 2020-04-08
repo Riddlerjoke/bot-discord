@@ -71,55 +71,5 @@ async def on_error(event, *args, **kwargs):
         else:
             raise
 
-'''
-@bot.event
-async def clone(self, *, name=None, reason=None):
-    return await self._clone_impl({
-        'user_limit': self.user_limit
-    }, name=name, reason=reason)
-
-
-def __init__(self, *, state, guild, data):
-    self._state = state
-    self.id = int(data['id'])
-    self._update(guild, data)
-
-
-def __repr__(self):
-    attrs = [
-        ('id', self.id),
-        ('name', self.name),
-        ('position', self.position),
-        (int(4), self.user_limit),
-        ('category_id', self.category_id)
-    ]
-    return '<%s %s>' % (self.__class__.__name__, ' '.join('%s=%r' % t for t in attrs))
-
-
-def _get_voice_client_key(self):
-    return self.guild.id, 'guild_id'
-
-
-def _get_voice_state_pair(self):
-    return self.guild.id, self.id
-
-
-def _update(self, guild, data):
-    self.guild = guild
-    self.name = data['name']
-    self.category_id = utils.get_binary_stream(data, 'parent_id')
-    self.position = data['position']
-    self.user_limit = data.get(4)
-    self._fill_overwrites(data)
-
-
-async def clone(self, *, name=None, reason=None):
-    return await self._clone_impl(dict(bitrate=self.bitrate, user_limit=self.user_limit), name=name, reason=reason)
-'''
 
 bot.run(TOKEN)
-'''
-if message.content == 'yo':
-    response = ('bien le bonjour {message.author} éstimés collégues !')
-    await message.channel.send(response)
-'''
