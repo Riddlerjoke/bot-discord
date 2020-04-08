@@ -25,7 +25,7 @@ client = discord.Client()
 async def on_ready():
     print(f'{bot.user.display_name} has connected to Discord!')
 
-#la fonction on_message permet
+#la fonction on_message permet de repondre a l'utilisateur qui l'a appelé, dans le channel approprié !
 
 
 async def on_message(message):
